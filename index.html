@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>I Love You, Ananya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      color: #fff;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .heart {
+      font-size: 4rem;
+      animation: heartbeat 1s infinite;
+    }
+
+    .message {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      max-width: 500px;
+      animation: slideIn 2s ease;
+      line-height: 1.6;
+    }
+
+    .btn {
+      margin-top: 30px;
+      padding: 12px 25px;
+      background-color: #fff;
+      color: #e91e63;
+      border: none;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-family: 'Poppins', sans-serif;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .btn:hover {
+      background-color: #e91e63;
+      color: #fff;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+  <h1>I Love You, Ananya 💖</h1>
+  <div class="heart">❤️</div>
+  <div class="message">
+    You are the most precious person to me.<br>
+    I’m never gonna leave you.<br>
+    This is all for us — our little forever. 💫
+  </div>
+
+  <button class="btn" onclick="showMessage()">Click Me</button>
+
+  <script>
+    function showMessage() {
+      alert("You're everything to me, Ananya. This love is forever 💘");
+    }
+  </script>
+</body>
+</html>
